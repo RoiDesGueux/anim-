@@ -14,7 +14,9 @@ background-color: lightgray;
 color: lightgray;
 }
 
-
+#lien-image{
+  z-index: 10;
+}
 
 ul{
   list-style-type: none;
