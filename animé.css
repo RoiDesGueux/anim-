@@ -208,6 +208,16 @@ header li a {
   background-color: #5a5a5a;
   color: #fff;
 }
+.ul a:hover {
+  background-color: #312f2f;;
+  color: #fff;
+  opacity: 80%;
+}
+
+  .icon {
+    margin-right: 10px;
+  }
+
 #title h1{
   text-align: center;
   font-size: 3em;
