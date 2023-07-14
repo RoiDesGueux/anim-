@@ -1,279 +1,180 @@
-<!DOCTYPE html>
-<html lang="fr">
+
+<!-- Price box minimal--><!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
   <head>
-    <meta charset="UTF-8">
+    <title>Animé</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href= "img/background/roi.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Roi_Des_Gueux</title>
-
-    <link rel="stylesheet" href="animé.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <body>
-        <header class="header">
-              <nav class="nav">
-                <ul class="ul1">
-                  <a href="#"><img src="img/nav/logo.png" alt="Logo" id="logo" width="75px"></a>
-                  <div class="nav-droite">
-                    <li><a href="https://roidesgueux.github.io/music/">Song</a></li>
-                    <li><a href="https://roidesgueux.github.io/mes-chaines/">Mes chaînes</a></li>
-                    <li><a href="https://roidesgueux.github.io/liens/">Jeux&Logiciels</a></li>
-                    <li><a href="https://roidesgueux.github.io/anime/">Animé</a></li>
-                    <li><a href="https://roidesgueux.github.io/contactez-moi/">Nous contacter</a></li>
+    <link rel="icon" href="images/roi.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>chargement enculé...</p>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-wide" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-346x62.png" alt="" width="281" height="82" srcset="images/logo-default-261x72.png 2x"/><img class="brand-logo-light" src="images/animé.png" alt="" width="133" height="45" srcset="images/logo-inverse-266x90.png 2x"/></a>
                   </div>
-                </nav >
-                <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
-                <header class="header">
-                  
-                    <nav class="header__nav">
-                        <div class="header__nav__close" onclick="closeMenuMobile()">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </div>
-                        <ul class="header__nav__menu">
-                            <li class="header__nav__menu__link">
-                                <a class="titre-nav" href="https://roidesgueux.github.io/mes-chaines/" >Mes chaînes</a>
-                                <div class="sous_titre">
-                                <img src="img/nav/tiktok.png" alt="tiktok" class="img_sous_texte" width="45px">
-                                <a href="https://www.tiktok.com/@roi_des_geueux" id="nnav"><h4 href="https://www.tiktok.com/@roi_des_geueux" id="nnav"> TikTok </h4></a>
-                                </div>
-                                <div class="sous_titre">
-                                <img src="img/nav/twitch.png" alt="tiktok" class="img_sous_texte" width="45px">
-                                <a href="https://www.twitch.tv/roi_des_gueux_max" id="nnav"><h4 href="https://www.twitch.tv/roi_des_gueux_max" id="nnav"> Twitch </h4></a>
-                                </div>
-                                <div class="sous_titre">
-                                <img src="img/nav/youtube.png" alt="tiktok" class="img_sous_texte" width="45px">
-                                <a href="https://www.youtube.com/@Roi_Des_Gueux " id="nnav"><h4 href="https://www.youtube.com/@Roi_Des_Gueux " id="nnav"> Youtube </h4></a>
-                                </div>
-                            </li>
-                            <li class="header__nav__menu__link">
-                                <a class="titre-nav" href="https://roidesgueux.github.io/liens/ ">Jeux&Logiciels</a>
-                                <div class="sous_titre">
-                                  <img src="img/nav/solo.png" alt="tiktok" class="img_sous_texte" width="43px">
-                                  <a href="https://roidesgueux.github.io/solo/" id="nnav"> <h3 href="https://roidesgueux.github.io/solo/" id="nnav"> Jeux solo </h3></a>
-                                  </div>
-                                  <div class="sous_titre">
-                                  <img src="img/nav/deux.png" alt="tiktok" class="img_sous_texte" width="40px">
-                                  <a href="https://roidesgueux.github.io/multi/" id="nnav"><h3 href="https://roidesgueux.github.io/multi/" id="nnav"> Jeux multi </h3></a>
-                                  </div>
-                                  <div class="sous_titre">
-                                     <img src="img/nav/logiciel.png" alt="tiktok" class="img_sous_texte" width="43px">
-                                     <a href="https://roidesgueux.github.io/logiciel/" id="nnav"> <h3 href="https://roidesgueux.github.io/logiciel/"> Logiciels </h3></a>
-                                      </div>
-                            </li>
-                            <li class="header__nav__menu__link">
-                                <a class="titre-nav" href="https://roidesgueux.github.io/anime/ ">Animé</a>
-                                <div class="sous_titre">
-                                  <img src="img/nav/vostfr.png" alt="tiktok" class="img_sous_texte" width="40px">
-                                  <a href="https://roidesgueux.github.io/vostfr/" id="nnav"><h1 href="https://roidesgueux.github.io/vostfr/" id="nnav"> Vostfr</h1></a>
-                                  </div>
-                                  <div class="sous_titre">
-                                  <img src="img/nav/fr.png" alt="tiktok" class="img_sous_texte" width="40px">
-                                  <a href="https://roidesgueux.github.io/VF/" id="nnav"><h1 href="https://roidesgueux.github.io/VF/" id="nnav"> VF</h1></a>
-                                  </div>
-                                  <div class="sous_titre">
-                                      <img src="img/nav/plannig.png" alt="tiktok" class="img_sous_texte" width="40px">
-                                      <a href="https://roidesgueux.github.io/planification/" id="nnav"><h1 href="https://roidesgueux.github.io/planification/"> Planning</h1></a>
-                                      </div>
-                            </li>
-            
-                        </ul>
-                    </nav>
-                    <div class="header__burger" onclick="openMenuMobile()">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </div>
-                </header>
-                <script>
-                  function openMenuMobile() {
-                      document.querySelector('.header__nav').classList.add('open');
-                      document.querySelector('.overlay-menu-mobile').classList.add('open');
-                  }
-          
-                  function closeMenuMobile() {
-                      document.querySelector('.header__nav').classList.remove('open');
-                      document.querySelector('.overlay-menu-mobile').classList.remove('open');
-                  }
-              </script>
-      
-        <div id="imagePrincipale">
-    
-        </div></br>
-        <div id="title">
-        <h1 >Mon Site de Streaming d'Anime</h1> 
-
-        <nav class="sous-titre"> 
-            <ul class="ul"> 
-              <li><a href="https://roidesgueux.github.io/VF/ " id="vf">VF</a></li> 
-              <li><a href="https://roidesgueux.github.io/vostfr/ " id="vostfr">VOSTFR</a></li> 
-              <li><a href="https://roidesgueux.github.io/planification/ " id="plan">Planification</a></li> 
-            </ul> 
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="https://roidesgueux.github.io/accueil/">Home</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="https://roidesgueux.github.io/music/">Song</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="https://roidesgueux.github.io/mes-chaines/">Chaîne</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="https://roidesgueux.github.io/liens/">jeux&logiciels</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="https://roidesgueux.github.io/contactez-moi/">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </nav>
-        </div> 
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="img/animé/page d'accueil/vf.png" alt="" style="width: 100%;">
-                <div class="text">VF</div>
-            </div>
-            <div class="mySlides fade">
-                <img src="img/animé/page d'accueil/vostfr.png" alt="" style="width: 100%;">
-                <div class="text">Vostfr</div>
-            </div>
-            <div class="mySlides fade">
-                <img src="img/animé/page d'accueil/planification.png" alt="" style="width: 100%;">
-                <div class="text">Planification</div></div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-            <a class="next" onclick="plusSlides(1)">&#10095</a>
         </div>
-        <hr class="rounded">
-          <main> 
-            <section id="vf"> 
-              <h2>Animes en VF</h2> 
-              <h1 class="trending">
-                | Tendance
-            </h1>
-    
+      </header>
+      <!-- Preview section-->
+      <section class="section context-dark bg-image bg-mask bg-mask-2 section-fullheight section-90vh" style="background-image: url(images/animé.png)">
+        <div class="section-fullheight-inner section-md">
+          <div class="container">
             <div class="row">
-              <div class="column">
-                  <img src="img/animé/page d'accueil/bbb.png" href="https://roidesgueux.github.io/planification/" alt="" id="couleur" style = "width: 100%;">
+              <div class="col-md-8 col-xl-6 text-center text-md-left">
+                <div class="jumbotron-custom wow fadeInRight">
+                  <div class="text-1">Roi_Des_Gueux</div>
+                  <div class="text-2"></div>
+                  <div class="title">Roi_Des_Gueux_Animé</div>
+                </div>
               </div>
-              <div class="column">
-                <a href="https://roidesgueux.github.io/VF/" id="lien-image">
-                    <img src="img/animé/page d_accueil/dragon.png" alt="" style = "width: 100%;"></a>
-              </div>
-              <div class="column">
-                <a href="https://roidesgueux.github.io/VF/page%201/Blue%20lock/cc.html " id="lien-image">
-                  <img src="img/animé/page d_accueil/valkyry s1.png" alt="" style = "width: 100%;"></a>
-              </div>
-              <div class="column">
-                <a href="https://roidesgueux.github.io/VF/page%201/Shadow/cc.html " id="lien-image">
-                  <img src="img/animé/page d_accueil/valkyry s2.png" alt="" style = "width: 100%;"></a>
-              </div>
-              <div class="column">
-                  <img src="img/animé/page d'accueil/interrogation.png" alt="" style = "width: 100%;">
-              </div>
-              <div class="column">
-                  <img src="img/animé/page d'accueil/bbb.png" alt="" id="couleur" style = "width: 100%;">
-              </div>
+            </div>
           </div>
-          </section> 
-        </main> 
-      </div>
-            <section id="vostfr"> 
-              <h2>Animes en VOSTFR</h2> 
-              <h1 class="trending">
-                | Tendance
-            </h1>
-    
-            <div class="row">
-                <div class="column">
-                    <img src="img/animé/page d'accueil/bbb.png" alt="" id="couleur" style = "width: 100%;">
-                </div>
-                <div class="column">
-                    <a href="https://roidesgueux.github.io/vostfr/page%201/dragonball%20heros/cc.html " id="lien-image">
-                    <img src="img/animé/page d'accueil/dragonball.png" alt="" style = "width: 100%;"></a>
-                </div>
-                <div class="column">
-                    <a href="https://roidesgueux.github.io/vostfr/page%201/Blue%20lock/cc.html " id="lien-image">
-                    <img src="img/animé/page d'accueil/bluelock.png" alt="" style = "width: 100%;"></a>
-                </div>
-                <div class="column">
-                    <a href="https://roidesgueux.github.io/vostfr/page%201/Shadow/cc.html " id="lien-image">
-                   <img src="img/animé/page d_accueil/shadow.png" alt="" style = "width: 100%;"></a>
-                </div>
-                <div class="column">
-                    <a href="https://roidesgueux.github.io/vostfr/page%201/Dragon%20Ball%20Super%20Broly/cc.html " id="lien-image">
-                    <img src="img/animé/page d_accueil/broly.png" alt="" style = "width: 100%;"></a>
-                </div>
-                <div class="column">
-                    <img src="img/animé/page d'accueil/bbb.png" alt="" id="couleur" style = "width: 100%;">
-                </div>
-            </div>
-          </section> 
-        </main> 
-      </div>
-            <section id="planification"> 
-              <h2>Planification</h2> 
-              <h1 class="trending">
-                | Tendance
-            </h1>
-    
-            <div class="row">
-                <div class="column">
-                    <img src="img/animé/page d'accueil/bbb.png" alt="" id="couleur" style = "width: 100%;">
-                </div>
-                <div class="column">
-                    <a href="https://roidesgueux.github.io/planification/ " id="lien-image">
-                    <img src="img/animé/page d_accueil/mha s1.png" alt="" style = "width: 100%;"></a>
-                </div>
-                <div class="column">
-                    <a href="https://roidesgueux.github.io/planification/ " id="lien-image">
-                    <img src="img/animé/page d_accueil/overlord s1.png" alt="" style = "width: 100%;"></a>
-                </div>
-                <div class="column">
-                    <img src="img/animé/page d'accueil/interrogation.png" alt="" style = "width: 100%;">
-                </div>
-                <div class="column">
-                    <img src="img/animé/page d'accueil/interrogation.png" alt="" style = "width: 100%;">
-                </div>
-                <div class="column">
-                    <img src="img/animé/page d'accueil/bbb.png" alt="" id="couleur" style = "width: 100%;">
-                </div>
-            </div>
-            </section> 
-          </main> 
         </div>
-        
-    </br></br>
-</br></br></br>
+      </section>
+    
+      <!-- Latest Works-->
+      <section class="section bg-gray-700 context-dark section-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 text-block-1 wow fadeInLeft">
+              <div class="section-sm section-sm-3">
+                <h5>Catégorie</h5>
+                <p>Vous pouvez choisir de regarder les animes en vostfr ou en vf mais vous pouvez aussi regardée les prochains animé à venir.</p>
+                <ul class="list-inline list-inline-sm-1">
+                  <li>
+                    <p>Regarde !</p>
+                  </li>
+                  <li><a class="icon icon-sm link-default mdi mdi-twitch" href="https://www.twitch.tv/roi_des_gueux_max"></a></li>
+                  <li><a class="icon icon-sm link-default mdi mdi-instagram" href="https://instagram.com/roi_des_gueux?igshid=MzNlNGNkZWQ4Mg=="></a></li>
+                  <li><a class="icon icon-sm link-default mdi mdi-youtube-play" href="https://www.youtube.com/@Roi_Des_Gueux"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper-->
+        <div class="swiper-section">
+          <div class="swiper-container swiper-slider swiper-slider-1" data-next=".custom-swiper-button-next" data-prev=".custom-swiper-button-prev" data-loop="true">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-slide-bg="images/vostfr.png">                 <div class="button-wrap"><a class="button button-default button-invariable" href="#">Voir</a></div>
+            </div>
+              <div class="swiper-slide" data-slide-bg="images/vf.png">                <div class="button-wrap"><a class="button button-default button-invariable" href="#">Voir</a></div>
+            </div>
+              <div class="swiper-slide" data-slide-bg="images/plannification.png">                <div class="button-wrap"><a class="button button-default button-invariable" href="#">Voir</a></div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- Swiper Navigation-->
+          </div>
+          <div class="custom-swiper-button-wrap">
+            <div class="custom-swiper-button-next mdi mdi-arrow-right"></div>
+            <div class="custom-swiper-button-prev mdi mdi-arrow-left"></div>
+          </div>
+        </div>
+      </section>
+            <!-- Latest Works-->
+  <!-- EVERY PROJECT-->
 </br>
-
-        <div class="Subscribe">
-            <h1 class="A">À NOTRE SUJET</h1>
-            <h3 class="A"> Roi_Des_Gueux est un site d’anime simple avec beaucoup de choix, nous sommes complètement libres mais avec des ajouts, si vous voulez des avantages premium puis <a href="https://www.youtube.com/channel/UCBEdOfReriVX44-iJCcuZpg">abonnez-vous maintenant</a>
-            </h3>
+</br>
+      
+      <section class="section section-xl-custom image-section section-lined">
+        <div class="container container-lined">
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+          </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-lg-6">
+              <h3>Des petits exemples :</h3>
+              <p>Découvrez un vaste catalogue d'anime captivants, des classiques aux nouveautés. Profitez d'une qualité vidéo exceptionnelle et de sous-titres multilingues. Des recommandations personnalisées vous guident vers de nouvelles séries passionnantes. Plongez dans un monde d'animation japonaise épique et divertissant.</p>
+              <div class="button-wrap-2"><a class="button button-default" href="about-us.html">Voir vostfr</a></div>
+              <div class="button-wrap-2"><a class="button button-default" href="about-us.html">Voir vf</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="mock-up-1">
+            <div class="object object-1"><img class="wow fadeInRight" src="images/mha s1.png" alt="" width="395" height="243"/>
+            </div>
+            <div class="object object-2"><img class="wow fadeInRight" src="images/shadow.png" alt="" width="384" height="189" data-wow-delay="0.2s"/>
+            </div>
+            <div class="object object-3"><img class="wow fadeInRight" src="images/one piece.webp" alt="" width="395" height="243" data-wow-delay="0.4s"/>
+            </div>
+            <div class="object object-4"><img class="wow fadeInRight" src="images/valkyry s1.png" alt="" width="209" height="184" data-wow-delay="0.6s"/>
+            </div>
+            <div class="object object-5"><img class="wow fadeInRight" src="images/broly.png" alt="" width="395" height="243" data-wow-delay="0.2s"/>
+            </div>
+            <div class="object object-6"><img class="wow fadeInRight" src="images/adt.jpg" alt="" width="275" height="184" data-wow-delay="0.4s"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our awards-->
+     
+      <!-- Latest Works-->
+     
 
-
-
-
-        <script>
-            let slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
+      <footer class="section footer-classic context-dark text-center">
+        <div class="container">
+          <div class="row row-15 justify-content-lg-between">
+            <div class="col-lg-6 col-xl-6 text-lg-left">
+              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. By <a href="https://roidesgueux.github.io/accueil/">Roi_Des_Gueux</a></p>
+            </div>
            
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-           
-            slides[slideIndex-1].style.display = "block";  
-          }
-          
-    </script>
-
-
-   
-</body>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- coded by Drel-->
+  </body>
 </html>
